@@ -1,7 +1,7 @@
 # RedProxyControl
 Tool for proxying all http and https traffic From a VM guest to host. Meant for use with Burp Suite.
 
-I like to use a combination of Windows and Linux operating systems for all my hacking. I have Burp Suit installed on Windows but I also like some of the tools and ease of use with Linux. The idea here is for any tool I use in my Linux VM that makes an http / https request, for it to get sent to Burp so I can see the Request and response in Burp which for me is located on my Windows host. This means I have to use a proxy to traffic requests to my proxy... anyway to accomplish this I created a short script you can run which easily turns on and off redsocks proxy and iptalbe rules in you Linux VM.
+I like to use a combination of Windows and Linux operating systems for all my hacking. I have Burp Suit installed on Windows but I also like some of the tools and ease of use with Linux. The idea here is for any tool I use in my Linux VM that makes an http / https request, to get sent to Burp so I can see the Request and response in Burp which for me is located on my Windows host. This means I have to use a proxy to traffic requests to my proxy... anyway to accomplish this I created a short script you can run which easily turns on and off redsocks proxy and iptables rules in you Linux VM to forward http / https traffic without having to use a program like proxychains.
 
 ## Installation  
 
