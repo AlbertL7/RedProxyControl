@@ -1,7 +1,7 @@
 # RedProxyControl
 Tool for proxying all http and https traffic From a VM guest to host. Meant for use with Burp Suite.
 
-I like to use a combination of Windows and Linux operating systems for all my hacking. I have Burp Suit installed on Windows but I also like some of the tools and ease of use with Linux. The idea here is for any tool I use in my Linux VM that makes an http / https request, for it to get sent to Burp so I can see the Request and response in Burp which for me is located on my Windows host. This means I have to use a proxy to traffic request to my proxy... anyway to accomplish this I created a short script you can run which easily turns on and off redsocks proxy and iptalbe rules in you Linux VM.
+I like to use a combination of Windows and Linux operating systems for all my hacking. I have Burp Suit installed on Windows but I also like some of the tools and ease of use with Linux. The idea here is for any tool I use in my Linux VM that makes an http / https request, for it to get sent to Burp so I can see the Request and response in Burp which for me is located on my Windows host. This means I have to use a proxy to traffic requests to my proxy... anyway to accomplish this I created a short script you can run which easily turns on and off redsocks proxy and iptalbe rules in you Linux VM.
 
 ## Installation  
 
@@ -43,6 +43,7 @@ redsocks {
 - The redsocks proxy is not set up.
 - Head over to Burp Suite and in Proxy settings click exit under Proxy Listeners and select "All Interfaces" for "Bind to address".
 - NOTE: you may have to go into your windows firewall and allow traffic below is a picture of the location I applied the settings to allow traffic through.
+  
 ![image](https://github.com/AlbertL7/RedProxyControl/assets/71300144/fca8f3aa-a699-4e17-853c-07c61585608d)
 
 - Take the script and add it to PATH, I personally added it to `/usr/local/bin/redproxycontrol.sh`
