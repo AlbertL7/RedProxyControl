@@ -53,7 +53,7 @@ redsocks {
 `alias proxyoff='sudo /usr/local/bin/redproxycontrol.sh stop'` 
 
 - After this you should be ready to go, this will proxy traffic from your Linux VM to Burp Suite located on you Windows host.
-<iframe src="https://giphy.com/embed/83HW1W3z0ttihuRAgS" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/83HW1W3z0ttihuRAgS">via GIPHY</a></p>
+<img src="https://giphy.com/embed/83HW1W3z0ttihuRAgS" width="300" height="200">
 ![image](https://github.com/AlbertL7/RedProxyControl/assets/71300144/0a2503e1-9100-44df-81ed-40774cd44b89)
 
 
