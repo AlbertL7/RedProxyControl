@@ -8,11 +8,13 @@ I like to use a combination of Windows and Linux operating systems for all my ha
 - First download redsocks on your VM, wheather thats Kali / Ubuntu / Mint or whatever your flavor of Linux distro is.
 
 `sudo apt update`
+
 `sudo apt install redsocks`
 
  - Now that redsocks is installed navigate to redsocks.conf, this should be located in the /etc/redsocks.conf. User your favorite text editor to open the file.
 
 `cd /etc/redsocks.conf`
+
 `subl /etc/redsocks.conf` instead of subl nano or vim will work or really anything
 
 - One the file is opened you will have to change some settings. Under redsocks function you have to change the IP address to your Windows host and the port your Burp Proxy is listening on, mine is 8080. The last thing you will want to change is the known types to http-connect. Here is what my redsocks.conf file looks like.
@@ -51,6 +53,7 @@ redsocks {
 - To make things easy I added an alias to my `.zshrc` profile to easily turn the proxy on and off.
 
 `alias proxyon='sudo /usr/local/bin/redproxycontrol.sh start'`
+
 `alias proxyoff='sudo /usr/local/bin/redproxycontrol.sh stop'` 
 
 - After this you should be ready to go, this will proxy traffic from your Linux VM to Burp Suite located on you Windows host.
