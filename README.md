@@ -57,7 +57,7 @@ redsocks {
 `alias proxyoff='sudo /usr/local/bin/redproxycontrol.sh stop'` 
 
 - After this you should be ready to go, this will proxy traffic from your Linux VM to Burp Suite located on you Windows host.
-- Note: Sometimes Burp will not respond / intercept requests from redsocks proxy. I found that turning the proxyon before starting up Burp prrtty much works everytime. 
+- Note: Sometimes Burp will not respond / intercept requests from redsocks proxy. I found that turning the proxyon before starting up Burp pretty much works everytime. 
   
 ![rpc](https://github.com/AlbertL7/RedProxyControl/assets/71300144/758d1cf5-be08-4c52-bcf6-6bfb630d06d7)
 
